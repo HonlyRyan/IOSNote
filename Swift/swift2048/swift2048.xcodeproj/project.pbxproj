@@ -12,6 +12,10 @@
 		318865C71951C10500F19A70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318865C51951C10500F19A70 /* Main.storyboard */; };
 		318865C91951C10500F19A70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318865C81951C10500F19A70 /* Images.xcassets */; };
 		318865D51951C10500F19A70 /* swift2048Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318865D41951C10500F19A70 /* swift2048Tests.swift */; };
+		318865DF1951C97E00F19A70 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318865DE1951C97E00F19A70 /* MainViewController.swift */; };
+		318865E11951C9AF00F19A70 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318865E01951C9AF00F19A70 /* SettingViewController.swift */; };
+		318865E41951C9E200F19A70 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318865E31951C9E200F19A70 /* MainTabViewController.swift */; };
+		318865E71951D3CA00F19A70 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318865E61951D3CA00F19A70 /* TileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 		318865CE1951C10500F19A70 /* swift2048Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift2048Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		318865D31951C10500F19A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		318865D41951C10500F19A70 /* swift2048Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift2048Tests.swift; sourceTree = "<group>"; };
+		318865DE1951C97E00F19A70 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = swift2048/MainViewController.swift; sourceTree = "<group>"; };
+		318865E01951C9AF00F19A70 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = swift2048/SettingViewController.swift; sourceTree = "<group>"; };
+		318865E31951C9E200F19A70 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		318865E61951D3CA00F19A70 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,8 @@
 		318865B31951C10500F19A70 = {
 			isa = PBXGroup;
 			children = (
+				318865E51951D3A600F19A70 /* view */,
+				318865E21951C9B600F19A70 /* controller */,
 				318865BE1951C10500F19A70 /* swift2048 */,
 				318865D11951C10500F19A70 /* swift2048Tests */,
 				318865BD1951C10500F19A70 /* Products */,
@@ -107,6 +117,24 @@
 				318865D31951C10500F19A70 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		318865E21951C9B600F19A70 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				318865E01951C9AF00F19A70 /* SettingViewController.swift */,
+				318865E31951C9E200F19A70 /* MainTabViewController.swift */,
+				318865DE1951C97E00F19A70 /* MainViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		318865E51951D3A600F19A70 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				318865E61951D3CA00F19A70 /* TileView.swift */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				318865E41951C9E200F19A70 /* MainTabViewController.swift in Sources */,
+				318865DF1951C97E00F19A70 /* MainViewController.swift in Sources */,
 				318865C41951C10500F19A70 /* ViewController.swift in Sources */,
 				318865C21951C10500F19A70 /* AppDelegate.swift in Sources */,
+				318865E71951D3CA00F19A70 /* TileView.swift in Sources */,
+				318865E11951C9AF00F19A70 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +429,7 @@
 				318865DA1951C10500F19A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		318865DB1951C10500F19A70 /* Build configuration list for PBXNativeTarget "swift2048Tests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +438,7 @@
 				318865DD1951C10500F19A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
